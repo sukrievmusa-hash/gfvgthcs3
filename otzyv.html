@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Оцените монтаж — Nur Aspan</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#14223a">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600;700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="rate">
+  <div class="rate__box">
+    <div class="rate__top">
+      <a href="./" class="logo" aria-label="Nur Aspan">
+        <svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2c4f86"/><stop offset="1" stop-color="#14223a"/></linearGradient></defs><rect width="40" height="40" rx="11" fill="url(#lg)"/><path d="M8 15 L20 9 L32 15" fill="none" stroke="#e9d3a2" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="14" cy="23" r="1.4" fill="#fff"/><circle cx="21" cy="27" r="1.1" fill="#fff" opacity=".8"/><circle cx="27" cy="22" r="1.6" fill="#fff"/><circle cx="18" cy="31" r=".9" fill="#fff" opacity=".6"/></svg>
+        <span class="logo__txt">NUR ASPAN</span>
+      </a>
+      <div class="lang" role="group" aria-label="Язык">
+        <button type="button" data-lang="ru" class="is-on">RU</button>
+        <button type="button" data-lang="kz">KZ</button>
+      </div>
+    </div>
+
+    <h1 data-i18n="r_h1">Оцените монтаж</h1>
+    <p class="muted" data-i18n="r_p">Это займёт минуту. Оценка уходит напрямую руководителю Nur Aspan — мы разбираем каждую.</p>
+
+    <form class="form" id="rateForm" novalidate>
+      <label><span data-i18n="r_brig">Бригада / мастер</span><input name="b" placeholder="—"></label>
+      <label><span data-i18n="r_addr">Адрес или район</span><input name="addr"></label>
+      <div class="q"><span class="q__t" data-i18n="r_q1">Соблюдение срока</span><div class="starsel" data-q="q1"></div></div>
+      <div class="q"><span class="q__t" data-i18n="r_q2">Качество монтажа</span><div class="starsel" data-q="q2"></div></div>
+      <div class="q"><span class="q__t" data-i18n="r_q3">Чистота после работы</span><div class="starsel" data-q="q3"></div></div>
+      <div class="q"><span class="q__t" data-i18n="r_q4">Вежливость мастеров</span><div class="starsel" data-q="q4"></div></div>
+      <label><span data-i18n="r_comment">Что можно улучшить?</span><textarea name="c" rows="3"></textarea></label>
+      <button class="btn btn--wa btn--block" type="submit"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Z"/></svg><span data-i18n="r_send">Отправить руководителю</span></button>
+      <p class="form__err" id="rateErr" hidden data-i18n="r_err">Поставьте оценку по всем пунктам</p>
+    </form>
+
+    <div class="rate__done" id="rateDone" hidden>
+      <h2 data-i18n="r_done_h">Спасибо!</h2>
+      <p class="muted" data-i18n="r_done_p">Ваше мнение для нас важно. Если оставите отзыв и в 2ГИС — поможете другим сделать выбор.</p>
+      <a class="btn btn--primary js-gis" href="#" target="_blank" rel="noopener" data-i18n="r_gis">Оставить отзыв в 2ГИС</a>
+    </div>
+
+    <p style="text-align:center;margin-top:22px"><a href="./" class="muted" data-i18n="r_back">← На сайт</a></p>
+  </div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
