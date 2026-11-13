@@ -248,3 +248,4 @@ input[type=range]{width:100%;accent-color:var(--navy);height:28px}
 .rate__done{text-align:center;background:#fff;border-radius:var(--r2);padding:34px 26px;box-shadow:var(--shadow);margin-top:24px}
 .rate__done h2{margin-bottom:10px}
 .rate__done .btn{margin-top:14px}
+.sec--first{padding-top:40px}@media (max-width:640px){.sec--first{padding-top:24px}}
